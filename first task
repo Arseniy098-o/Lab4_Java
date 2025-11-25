@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Variant1Task1 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Введіть значення x: ");
+        double x = sc.nextDouble();
+
+        System.out.print("Введіть значення a: ");
+        double a = sc.nextDouble();
+
+        System.out.print("Введіть значення b: ");
+        double b = sc.nextDouble();
+
+        double f;
+
+        if (x >= 1 && x < 3) {
+            // перша формула
+            f = 9 / (a * x);
+            System.out.println("f(x) = " + f);
+
+        } else if (x == 3) {
+            // друга формула
+            f = a * x * x + x + b;
+            System.out.println("f(x) = " + f);
+
+        } else {
+            System.out.println("x не належить області визначення функції [1;3]");
+        }
+    }
+}
